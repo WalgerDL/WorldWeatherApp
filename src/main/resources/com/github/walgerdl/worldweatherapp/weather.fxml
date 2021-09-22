@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="585.0" prefWidth="496.0" style="-fx-background-color: #333;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.github.walgerdl.worldweatherapp.HelloController">
+   <children>
+      <AnchorPane layoutX="-8.0" layoutY="-8.0" prefHeight="75.0" prefWidth="504.0" style="-fx-background-color: #000;">
+         <children>
+            <Text fill="WHITE" layoutX="6.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="World Weather Viewer" textAlignment="CENTER" wrappingWidth="496.0">
+               <font>
+                  <Font name="System Bold" size="39.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="city" layoutX="105.0" layoutY="93.0" prefHeight="52.0" prefWidth="286.0" promptText="ENTER CITY NAME" style="-fx-background-color: #555;">
+         <font>
+            <Font name="Arial Black" size="20.0" />
+         </font>
+      </TextField>
+      <Button fx:id="getData" ellipsisString="0" layoutX="142.0" layoutY="169.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="209.0" style="-fx-background-color: #666; -fx-background-radius: 7px; -fx-border-color: #913; -fx-border-radius: 7px;" text="How is the weather?" textAlignment="CENTER" textFill="WHITE">
+         <effect>
+            <ColorAdjust />
+         </effect>
+         <font>
+            <Font name="Arial Black" size="16.0" />
+         </font>
+      </Button>
+      <Text fill="#970000" layoutX="112.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="INFORMATION">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+      </Text>
+<!--      <ImageView fitHeight="63.0" fitWidth="75.0" layoutX="411.0" layoutY="202.0" pickOnBounds="true" preserveRatio="true">-->
+<!--         <image>-->
+<!--            <Image url="F:/WorldWeatherApp/src/main/resources/com/github/walgerdl/worldweatherapp/termo.png" />-->
+<!--         </image>-->
+<!--      </ImageView>-->
+      <Text fx:id="temperature" fill="#00ff1a" layoutX="14.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TEMPERATURE:  ">
+         <font>
+            <Font name="Arial Black" size="30.0" />
+         </font>
+      </Text>
+      <Text fx:id="max" fill="#00ff1a" layoutX="16.0" layoutY="418.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MAXIMUM:  ">
+         <font>
+            <Font name="Arial Black" size="30.0" />
+         </font>
+      </Text>
+      <Text fx:id="feltLike" fill="#00ff1a" layoutX="14.0" layoutY="358.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FELT LIKE:  ">
+         <font>
+            <Font name="Arial Black" size="30.0" />
+         </font>
+      </Text>
+      <Text fx:id="min" fill="#00ff1a" layoutX="14.0" layoutY="481.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MINIMUM:  ">
+         <font>
+            <Font name="Arial Black" size="30.0" />
+         </font>
+      </Text>
+      <Text fx:id="atmoPress" fill="#00ff1a" layoutX="14.0" layoutY="541.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ATMO. PRESSURE:  ">
+         <font>
+            <Font name="Arial Black" size="30.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="88.0" fitWidth="87.0" layoutX="391.0" layoutY="202.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>
