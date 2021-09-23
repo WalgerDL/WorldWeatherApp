@@ -90,6 +90,16 @@
             <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>com.github.walgerdl</groupId>
+            <artifactId>WorldWeatherApp</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20210307</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -113,7 +123,7 @@
                         <id>default-cli</id>
                         <configuration>
                             <mainClass>
-                                com.github.walgerdl.worldweatherapp/com.github.walgerdl.worldweatherapp.HelloApplication
+                                com.github.walgerdl.worldweatherapp/com.github.walgerdl.worldweatherapp.WorldWeatherApplication
                             </mainClass>
                         </configuration>
                     </execution>

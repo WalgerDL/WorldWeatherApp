@@ -9,6 +9,7 @@ module com.github.walgerdl.worldweatherapp {
     requires org.kordamp.ikonli.javafx;
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
+    requires org.json;
 
     opens com.github.walgerdl.worldweatherapp to javafx.fxml;
     exports com.github.walgerdl.worldweatherapp;
