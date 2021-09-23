@@ -20,7 +20,7 @@ public class WorldWeatherApplication extends Application {
 
     public static void main(String[] args) {
         launch();
-        // api key from weather map 4e2bee95cadeb6d9b4398f9144d1f1dc
+
 
     }
 }

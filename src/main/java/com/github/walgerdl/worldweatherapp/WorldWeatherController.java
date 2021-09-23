@@ -46,8 +46,7 @@ public class WorldWeatherController {
         getData.setOnAction(event -> {
             String getUserCity = city.getText().trim();
             if(!getUserCity.equals("")){
-            //String output = getURLcontent("http://api.openweathermap.org/data/2.5/weather?q="+ getUserCity + "&appid=4e2bee95cadeb6d9b4398f9144d1f1dc");
-            String output = getURLcontent("http://api.openweathermap.org/data/2.5/weather?q="+ getUserCity + "&units=metric&appid=4e2bee95cadeb6d9b4398f9144d1f1dc");
+            String output = getURLcontent("http://api.openweathermap.org/data/2.5/weather?q="+ getUserCity + "&units=metric&appid=##############");
                 System.out.println(output);
 
             if(!output.isEmpty()) {
